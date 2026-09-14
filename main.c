@@ -36,6 +36,32 @@ int main(void) {
     }
     return 0;
 }
-// **************************************************
 
+// *******************Trojuholnik************************
+#include <stdio.h>
 
+int main(void) {
+    int rows;
+
+    printf("Daj cislo: ");
+    if (scanf("%d", &rows) != 1 || rows <= 0) {
+        printf("Nespravny vstup.\n");
+        return 1;
+    }
+
+    int stars = 1;
+
+    while (stars <= rows) {
+
+        for (int i = 0; i < stars; i++) {
+            printf("*");
+        }
+
+        printf("\n");
+
+        stars++;
+    }
+
+    return 0;
+}
+// Trosicku som zle pochopil zadanie a spravil som pyramidu, tak pridavam este trojuholnik
